@@ -1,0 +1,18 @@
+$box_width: 400px;
+$box_radius: 10px;
+$box_padding: 35px;
+$box_background: #fff;
+
+$elements_padding: 12px;
+
+$text_color: #3E3E3D;
+$light_color: lighten($text_color, 30%);
+$brand_color: #57a6e2;
+$hover_brand_color: darken($brand_color, 10%);
+
+
+$transitions_time: 0.3s;
+
+$footer_background: #F0F7FC;
+
+$errors_color: #e00606;

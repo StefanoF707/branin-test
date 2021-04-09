@@ -1,0 +1,242 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #C5C5C4;
+}
+
+:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.img100 {
+  width: 100%;
+  vertical-align: middle;
+}
+
+#app {
+  display: flex;
+  height: 100vh;
+  overflow: auto;
+  color: #3E3E3D;
+}
+#app #login_box {
+  position: relative;
+  width: 400px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: auto;
+  box-shadow: 0px 0px 11px -5px #000000;
+  overflow: hidden;
+}
+#app #login_box #closer_box {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  width: 40px;
+  cursor: pointer;
+}
+
+header {
+  padding: 35px;
+}
+header .header_top {
+  width: 50%;
+  margin: 0 auto;
+}
+header .header_middle {
+  padding: 12px 0;
+  text-align: center;
+}
+header .header_middle p {
+  font-size: 17px;
+  font-weight: 500;
+  color: #8b8b89;
+}
+header .header_middle p .welcome_text {
+  font-weight: 600;
+  color: #3E3E3D;
+}
+header .header_bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+header .header_bottom .social_btn {
+  display: flex;
+  align-items: center;
+  width: calc(100% / 2 - 10px);
+  margin: 0 5px;
+  padding: calc(12px / 2);
+  border: 1px solid #bebebc;
+  text-align: center;
+  box-shadow: 0px 2px 9px -10px #000000;
+  transition: border 0.3s;
+}
+header .header_bottom .social_btn:hover {
+  border: 1px solid #2c8fda;
+}
+header .header_bottom .social_btn .social_btn_left {
+  width: 20%;
+}
+header .header_bottom .social_btn .social_btn_right {
+  width: 80%;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+main .main_title {
+  border-top: 1px solid #bebebc;
+  position: relative;
+}
+main .main_title h5 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0 15px;
+  text-transform: uppercase;
+  background: #fff;
+  color: #bebebc;
+}
+main #form_login {
+  padding: 35px;
+}
+main #form_login .form_box {
+  display: flex;
+  position: relative;
+  margin-bottom: 15px;
+  border: 1px solid #bebebc;
+  border-radius: 5px;
+  padding: 12px 0;
+}
+main #form_login .form_box .form_box_aside {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #8b8b89;
+  text-align: center;
+  padding: 0 12px;
+}
+main #form_login .form_box .form_box_aside a {
+  color: #57a6e2;
+  font-weight: 600;
+  font-size: 13px;
+  transition: color 0.3s;
+}
+main #form_login .form_box .form_box_aside a:hover {
+  color: #2c8fda;
+}
+main #form_login .form_box .form_box_input {
+  width: 100%;
+}
+main #form_login .form_box .form_box_input input {
+  width: 100%;
+  font-size: 15px;
+  border: 0;
+  padding-right: 12px;
+}
+main #form_login .form_box .form_box_input input:-webkit-autofill, main #form_login .form_box .form_box_input input:-webkit-autofill:hover, main #form_login .form_box .form_box_input input:-webkit-autofill:focus, main #form_login .form_box .form_box_input input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px white inset !important;
+}
+main #form_login .form_box label[for=email] {
+  position: absolute;
+  font-size: 13px;
+  top: 0;
+  left: 10px;
+  transform: translateY(-50%);
+  background: #fff;
+  padding: 0 5px;
+  color: #bebebc;
+  font-weight: 600;
+}
+main #form_login .form_box.invalid_field {
+  border: 1px solid #e00606;
+}
+main #form_login .form_check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border: 0;
+}
+main #form_login .form_check #remember {
+  transform: scale(1.5);
+  vertical-align: middle;
+  margin: 0 10px 0 5px;
+}
+main #form_login .form_check label {
+  font-size: 13px;
+}
+main #form_login button {
+  display: block;
+  width: 100%;
+  padding: calc(12px * 1.5);
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 3px;
+  text-align: center;
+  color: #fff;
+  background: #57a6e2;
+  border: 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+main #form_login button:hover {
+  background: #2c8fda;
+}
+main #form_login .invalid_feedback {
+  display: block;
+  font-size: 12px;
+  color: #e00606;
+  text-align: right;
+}
+
+footer {
+  background: #F0F7FC;
+  padding: 20px;
+  text-align: center;
+}
+footer p {
+  font-weight: 500;
+  font-size: 15px;
+}
+footer p .register_btn {
+  color: #57a6e2;
+  transition: color 0.3s;
+}
+footer p .register_btn:hover {
+  color: #2c8fda;
+}
+footer p .register_btn i {
+  font-size: 8px;
+  vertical-align: middle;
+}
+footer .logout_btn {
+  background: transparent;
+  font-size: 15px;
+  border: 0;
+  color: #57a6e2;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+footer .logout_btn:hover {
+  color: #2c8fda;
+}
+footer .logout_btn i {
+  font-size: 8px;
+  vertical-align: middle;
+}

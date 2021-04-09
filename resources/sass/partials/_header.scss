@@ -1,0 +1,56 @@
+header {
+   padding: $box_padding;
+
+   .header_top {
+      width: 50%;
+      margin: 0 auto;
+   }
+
+   .header_middle {
+      padding: $elements_padding 0;
+      text-align: center;
+
+      p {
+         font-size: 17px;
+         font-weight: 500;
+         color: lighten($text_color, 30%);
+
+         .welcome_text {
+            font-weight: 600;
+            color: $text_color;
+         }
+      }
+   }
+
+   .header_bottom {
+      display: flex;
+      justify-content: space-between;
+      padding-top: $elements_padding;
+
+      .social_btn {
+         display: flex;
+         align-items: center;
+         width: calc(100% / 2 - 10px);
+         margin: 0 5px;
+         padding: calc(#{$elements_padding} / 2);
+         border: 1px solid lighten($light_color, 20%);
+         text-align: center;
+         box-shadow: 0px 2px 9px -10px #000000;
+         transition: border $transitions_time;
+
+         &:hover {
+            border: 1px solid $hover_brand_color;
+         }
+
+         .social_btn_left {
+            width: 20%;
+         }
+
+         .social_btn_right {
+            width: 80%;
+            font-size: 15px;
+            font-weight: 700;
+         }
+      }
+   }
+}

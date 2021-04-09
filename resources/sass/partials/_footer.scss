@@ -1,0 +1,44 @@
+footer {
+   background: $footer_background;
+   padding: 20px;
+   text-align: center;
+
+   p {
+      font-weight: 500;
+      font-size: 15px;
+
+      .register_btn {
+         color: $brand_color;
+         transition: color $transitions_time;
+
+         &:hover {
+            color: $hover_brand_color;
+         }
+
+         i {
+            font-size: 8px;
+            vertical-align: middle;
+         }
+      }
+   }
+
+   .logout_btn {
+       background: transparent;
+       font-size: 15px;
+       border: 0;
+       color: $brand_color;
+       font-weight: 500;
+       cursor: pointer;
+       transition: color $transitions_time;
+
+       &:hover {
+          color: $hover_brand_color;
+       }
+
+       i {
+          font-size: 8px;
+          vertical-align: middle;
+       }
+   }
+
+}
