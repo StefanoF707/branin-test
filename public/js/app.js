@@ -1852,11 +1852,13 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 var app = new vue__WEBPACK_IMPORTED_MODULE_1__.default({
   el: '#app',
   data: {
-    user: []
+    user: ''
   },
   mounted: function mounted() {
-    axios__WEBPACK_IMPORTED_MODULE_0___default().get('http://127.0.0.1:8000/api/user').then(function (response) {
-      console.log(response);
+    var _this = this;
+
+    axios__WEBPACK_IMPORTED_MODULE_0___default().get("http://127.0.0.1:8000/api/user/".concat(userId)).then(function (response) {
+      _this.user = response.data.name;
     });
   }
 });

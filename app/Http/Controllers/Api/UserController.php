@@ -9,8 +9,8 @@ use App\User;
 
 class UserController extends Controller
 {
-    public function user_logged() {
-        $user = User::where('id', Auth::id())->first();
+    public function user_logged($id) {
+        $user = User::where('id', $id)->first();
 
         return response()->json($user);
     }

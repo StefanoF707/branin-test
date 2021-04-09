@@ -124,7 +124,7 @@
                     </p>
                 @else
                     <p>
-                        Ciao {{ Auth::user()->name }}!
+                        Ciao @{{ user }}!
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                             @csrf
                             <button type="submit" class="logout_btn">
@@ -141,7 +141,11 @@
 
     </div>
 
-    <script src="{{ asset('js/app.js') }}" charset="utf-8"></script>
+    @auth
+        <script>let userId = {{ Auth::user()->id }}</script>
+        <script src="{{ asset('js/app.js') }}" charset="utf-8"></script>
+    @endauth
+
 
 </body>
 </html>

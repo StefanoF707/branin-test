@@ -6,12 +6,12 @@ import axios from 'axios';
 let app = new Vue({
     el: '#app',
     data: {
-        user: [],
+        user: '',
     },
     mounted() {
-        axios.get('http://127.0.0.1:8000/api/user')
+        axios.get(`http://127.0.0.1:8000/api/user/${userId}`)
         .then( (response) => {
-            console.log(response);
+            this.user = response.data.name;
         } );
     }
 });
